@@ -1,7 +1,8 @@
 # Circuit Python Express
 
-Notes on getting started with Circtuit Python Express.
+Notes on getting started with Circuit Python Express.
 
+See also: https://github.com/ouseful-testing/circuit-playground-express
 
 ## Quick Start
 
@@ -163,7 +164,7 @@ The notebook you are running by default executes the code in the code cells in a
 
 Running the cell should download an install a Circuit Python kernel that will let you execute code in the code cells in a notebook running that kernel on a connected Circuit Playground Express device.
 
-In passing, note that we can also run some simple diagnostics relating to the Circuit Playground Express connection using your computer's Pyhton environment. In the same notebook that you used to install the new kernel, create a new code cell (click the `+` button in the toolbar) copy in the following code and run it to see what port the Circuit Playground Express device is connected to:
+In passing, note that we can also run some simple diagnostics relating to the Circuit Playground Express connection using your computer's Python environment. In the same notebook that you used to install the new kernel, create a new code cell (click the `+` button in the toolbar) copy in the following code and run it to see what port the Circuit Playground Express device is connected to:
 
 ```
 from serial import Serial
