@@ -1,4 +1,4 @@
-# Circuit Python Express
+# "Circuit Python Express"
 
 Notes on getting started with Circuit Playground Express and Circuit Python.
 
@@ -18,9 +18,9 @@ If you're interested, the 2 pairs, which make 4 wires, are connected as follows:
 
 <a href="https://en.wikipedia.org/wiki/USB_hardware"><img width=200 src="images/usb_wikipedia.png" /></a>
 
-Connect the Circuit Python Express to your computer with the micro-USB data cable.
+Connect the Circuit Playground Express to your computer with the micro-USB data cable.
 
-The Circuit Python Express should start up, and the multi-coloured LEDs around the edge should start lighting up in a circular way.
+The Circuit Playground Express should start up, and the multi-coloured LEDs around the edge should start lighting up in a circular way.
 
 With a brand new Circuit Playground Express device, it's missing some things we need software wise.
 
@@ -32,26 +32,26 @@ If you want to get the file manually from the command line (ignore this if it me
 
 `wget https://downloads.circuitpython.org/bin/circuitplayground_express/en_US/adafruit-circuitpython-circuitplayground_express-en_US-6.2.0.uf2`
 
-Open a folder/directory so you can see it, and then look for a little tiny button in the middle of the Circuit Python Express board. It'll have `RESET` written in tiny letters just above it.
+Open a folder/directory so you can see it, and then look for a little tiny button in the middle of the Circuit Playground Express board. It'll have `RESET` written in tiny letters just above it.
 
 __Press the `RESET` button once.__
 
-The lights around the Circuit Python Express should all turn green: the device is in BOOT mode.
+The lights around the Circuit Playground Express should all turn green: the device is in BOOT mode.
 
 On your computer, look to see what disks are mounted. On a Mac it'll be available from a Finder window under *LOCATiONS*. You'll see something similar in the *Computer* area of a folder sidebar where you can see the *C:* drive listed.
 
 <img width=200 src="images/docs_and_ou-container-builder.png" />
 
-If the Circuit Python Express is in BOOT mode (all the LEDs round the edge are green and not flashing) you __should__ see something like a mounted `BOOT` or `CPLAYBOOT` drive.
+If the Circuit Playground Express is in BOOT mode (all the LEDs round the edge are green and not flashing) you __should__ see something like a mounted `BOOT` or `CPLAYBOOT` drive.
 
 *On a Mac, you may not. In which case, you are stuck until I find a hack, or unless you have another computer...*
 
 
-Drag the file you downloaded from the Circuit Python Express website (in my case, the file `adafruit-circuitpython-circuitplayground_express-en_US-6.2.0.uf2`) onto the `BOOT` (`CPLAYBOOT`) drive.
+Drag the file you downloaded from the Circuit Playground Express website (in my case, the file `adafruit-circuitpython-circuitplayground_express-en_US-6.2.0.uf2`) onto the `BOOT` (`CPLAYBOOT`) drive.
 
 The drive should disappear and the Circuit Playground Express might flash a bit. On your computer, the `BOOT` (`CPLAYBOOT`) drive should be replaced by a `CIRCUITPY` drive. On the Circuit Playground Express, just a single green power status LED should be illuminated.
 
-If you unplug the Circuit Python Express, you may need to give it a kick to reboot each time you reconnect. Try clicking the `RESET` button a couple of times. If that doesn't work, click it again once, maybe?
+If you unplug the Circuit Playground Express, you may need to give it a kick to reboot each time you reconnect. Try clicking the `RESET` button a couple of times. If that doesn't work, click it again once, maybe?
 
 There are various helper packages and demos available from [here](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/tag/20210506); see the [*Adafruit CircuitPython Library Bundle* docs](https://circuitpython.readthedocs.io/projects/bundle/en/latest/index.html) for more detail.
 
@@ -77,7 +77,7 @@ It should also detect your Circuit Playground Express
 
 <img width=400 src="images/Mu_new_device.png" />
 
-The *Mode* button in the Mu editor toolbar also allows you to set the editor to a Circuit Python Express editor mode:
+The *Mode* button in the Mu editor toolbar also allows you to set the editor to a Circuit Playground Express editor mode:
 
 <img width=400 src="images/Select_Mode_and_Mu.png" />
 
@@ -109,7 +109,7 @@ If you save it, it should flash an LED. It didn't work for me. Opening the *Seri
 
 For some reason the program wasn't running when downloaded.
 
-A bit a blind trying seemed to fix things, specifically opening the serial window by clicking the *Serial* toolbar button, `ctrl-c` to get the REPL mode, the `ctrl-d` to relead and rerun the downloaded program.
+A bit of blind trial and error seemed to fix things, specifically opening the serial window by clicking the *Serial* toolbar button, `ctrl-c` to get the REPL mode, the `ctrl-d` to relead and rerun the downloaded program.
 
 If you have programming in an infinite loop, `ctrl-c` to stop, then `ctrl-d` to reload and run it again.
 
