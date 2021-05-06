@@ -1,6 +1,6 @@
 # Circuit Python Express
 
-Notes on getting started with Circuit Python Express.
+Notes on getting started with Circuit Playground Express and Circuit Python.
 
 See also: https://github.com/ouseful-testing/circuit-playground-express
 
